@@ -1,188 +1,322 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Shubham Pawale | Web Developer</title>
-  <meta name="description" content="Shubham Pawale – Web Developer based in Mumbai" />
-  <meta name="keywords" content="Shubham Pawale, Web Developer, Portfolio, Mumbai" />
-  <meta name="author" content="Shubham Pawale" />
-  
-  <link rel="shortcut icon" href="favicon.ico" />
-  <link href="https://fonts.googleapis.com/css?family=Inter:300,400,600|Merriweather:400,700&display=swap" rel="stylesheet">
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta name="google-site-verification" content="QiqiTouSp2JQPbrWYwUq7xHpuFL2KR-oh-gezyxxX10" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Shubham Pawale</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
 
-  <style>
-    /* Reset & base */
-    * { margin:0; padding:0; box-sizing:border-box; }
-    body { font-family:'Inter', sans-serif; line-height:1.6; background:#fdfdfd; color:#333; }
-    a { color:#0077cc; text-decoration:none; }
-    a:hover { text-decoration:underline; }
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
 
-    header { background:#0077cc; color:white; padding:20px 0; text-align:center; }
-    header h1 { margin-bottom:5px; font-size:2.5rem; }
-    header p { font-size:1.1rem; }
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
 
-    nav { margin-top:10px; }
-    nav a { margin:0 12px; color:white; font-weight:600; }
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
 
-    section { padding:60px 20px; max-width:1000px; margin:0 auto; }
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
 
-    .btn { display:inline-block; background:#0077cc; color:white; padding:12px 24px; border-radius:4px; }
-    .btn:hover { background:#005fa3; }
+	</head>
+	<body>
+	<div id="colorlib-page">
+		<div class="container-wrap">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+			<div class="text-center">
+				<div class="author-img" style="background-image: url(images/about.jpg);"></div>
+				<h1 id="colorlib-logo"><a href="index.html">Shubham Pawale</a></h1>
+				<span class="position"><a href="#">Web Designer</a><span style="color: black;"> in Mumbai</span></span>
+			</div>
+			<nav id="colorlib-main-menu" role="navigation" class="navbar">
+				<div id="navbar" class="collapse">
+					<ul>
+						 
+						<li class="active"><a href="#" data-nav-section="about">About</a></li> 
+						<li><a href="#" data-nav-section="skills">Skills</a></li>
+						<li><a href="#" data-nav-section="education">Education</a></li>
+						  
+						<li><a href="#" data-nav-section="contact">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
 
-    .about-content { display:flex; flex-wrap:wrap; align-items:center; gap:40px; }
-    .about-img { width:200px; flex-shrink:0; border-radius:50%; object-fit:cover; }
-    .about-text { flex:1; }
+			<div class="colorlib-footer" style="margin-top: 5">
+				
+				<ul>
+					<li><a href="https://www.facebook.com/shubham.pawale.98892?mibextid=ZbWKwL" target="_blank"><i class="icon-facebook2"></i></a></li>
+					
+					<li><a href="https://www.instagram.com/shubham__pawale?igsh=MTZqNnJpM2pxMDZ4cg==" target="_blank"><i class="icon-instagram"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/shubham-pawale-56245a249" target="_blank"><i class="icon-linkedin2"></i></a></li>
+				</ul>
+			</div>
 
-    .skills-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:20px; }
-    .skill-card { background:white; padding:20px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
-    .skill-card h3 { margin-bottom:12px; font-size:1.1rem; }
-    .progress-bar { background:#e0e0e0; border-radius:4px; overflow:hidden; height:12px; }
-    .progress-bar div { height:100%; }
+		</aside>
 
-    .projects-list { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:20px; }
-    .project { background:white; border-radius:8px; overflow:hidden; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
-    .project img { width:100%; display:block; }
-    .project-content { padding:16px; }
-    .project-content h4 { margin-bottom:8px; }
-    .project-content p { margin-bottom:12px; font-size:0.9rem; }
-    .project-links a { margin-right:12px; font-size:0.9rem; }
+		<div id="colorlib-main">
+		
 
-    .education-item { margin-bottom:24px; }
-    .education-item h4 { margin-bottom:6px; }
+			<section class="colorlib-about" data-section="about">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="col-md-12">
+									<div class="about-desc">
+										<span class="heading-meta">About Us</span>
+										<h1>Who Am I?</h1>
+										<p style="font-size: 21px;"><strong>Hi I'm Shubham Pawale</strong> I’m completed my B.SC Computer science in Pillai College, Panvel. I have interest in Technology related things and IT section so that I choose this side. I spend more and more time for learning new things and improving my skills and knowledge about coding. I want to be a part of progressive organization with a creative, Challenging and encouraging work environment where I can utilize and enhance my skills, gain practical experience and use it to serve the organization to best of our ability.</p>
+									</div>
+								</div>
+							</div>
+							
+							
+						</div>
+					</div>
+				</div>
+			</section>
 
-    .contact-form { background:white; padding:24px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
-    .contact-form input, .contact-form textarea { width:100%; padding:10px; margin-bottom:16px; border:1px solid #ccc; border-radius:4px; }
-    .contact-form button { background:#0077cc; color:white; padding:12px 24px; border:none; border-radius:4px; cursor:pointer; }
-    .contact-form button:hover { background:#005fa3; }
 
-    footer { text-align:center; padding:20px; background:#f5f5f5; }
-    footer p { margin-bottom:10px; }
-    footer .social a { margin:0 8px; font-size:1.4rem; }
+		
 
-    @media(max-width:768px){
-      header h1 { font-size:2rem; }
-      .about-content { flex-direction:column; text-align:center; }
-    }
-  </style>
-</head>
-<body>
+			<section class="colorlib-skills" data-section="skills">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">My Specialty</span>
+							<h2 class="colorlib-heading animate-box">My Skills</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft"> 
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>ADBMS</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
+								    <span>90%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>JAVA</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="60"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:60%">
+								    <span>60%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>HTML5</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="95"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:95%">
+								    <span>95%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>CSS3</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="70"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
+								    <span>70%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>PYTHON</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
+								    <span>70%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</section>
 
-  <header>
-    <h1>Shubham Pawale</h1>
-    <p>Web Developer | Mumbai</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+			<section class="colorlib-education" data-section="education">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Education</span>
+							<h2 class="colorlib-heading animate-box">Education</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+							<div class="fancy-collapse-panel">
+								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingOne">
+									        <h4 class="panel-title">
+									            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">SSC
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+									         <div class="panel-body">
+									            <div class="row">
+										      		<div class="col-md-12">
+										      			<p><strong>School:</strong> Aspee Vidyalaya Uchat,Mumbai Divisional Board.</p>
+										      			<p><strong>Score:</strong> 73.80%</p>
+										      			<p><strong>Year:</strong> 2018-19.</p>
+										      		</div>
+										      		
+										      	</div>
+									         </div>
+									    </div>
+									</div>
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingTwo">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">HSC
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+									        <div class="panel-body">
+									            <p><strong>College:</strong> Changu kana Thakur,Panvel</p>
+										      	<p><strong>Score:</strong> 81.00%</p>
+										      	<p><strong>Year:</strong> 2020-21</p>
+									        </div>
+									    </div>
+									</div>
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingThree">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Bachelor Degree of Computer Science
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+									        <div class="panel-body">
+									           <p><strong>College:</strong> Pillai College of Arts commerce and science, Panvel</p>
+										      	<p><strong>Score:</strong> 7.7 CGPA</p>
+										      	<p><strong>Year:</strong> 2021-22</p>
+									        </div>
+									    </div>
+									</div>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <div class="about-content">
-      <img src="images/about.jpg" alt="Shubham Pawale" class="about-img" />
-      <div class="about-text">
-        <p><strong>Hi, I'm Shubham Pawale</strong>, a Computer Science graduate from Pillai College in Panvel. I'm passionate about web development, enjoy learning new technologies, and apply my knowledge to meaningful projects. I'm eager to join creative, challenging, and innovative teams where I can make a real impact.</p>
-        <a href="#contact" class="btn">Hire Me</a>
-      </div>
-    </div>
-  </section>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-  <section id="skills">
-    <h2>My Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <h3>HTML5 & CSS3 (95% & 70%)</h3>
-        <div class="progress-bar"><div style="width:95%;background:#4caf50;"></div></div><br/>
-        <div class="progress-bar"><div style="width:70%;background:#2196f3;"></div></div>
-        <p>Built responsive and accessible layouts using modern HTML & CSS.</p>
-      </div>
-      <div class="skill-card">
-        <h3>Python (70%)</h3>
-        <div class="progress-bar"><div style="width:70%;background:#ff9800;"></div></div>
-        <p>Used for data automation, scripting, and basic automation projects.</p>
-      </div>
-      <div class="skill-card">
-        <h3>Java (60%)</h3>
-        <div class="progress-bar"><div style="width:60%;background:#f44336;"></div></div>
-        <p>Developed console applications and practiced OOP principles.</p>
-      </div>
-      <div class="skill-card">
-        <h3>ADBMS (90%)</h3>
-        <div class="progress-bar"><div style="width:90%;background:#9c27b0;"></div></div>
-        <p>Designed and queried relational databases using SQL.</p>
-      </div>
-    </div>
-  </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects-list">
-      <!-- Repeat each .project for real projects -->
-      <div class="project">
-        <img src="images/project1.jpg" alt="Project 1 Screenshot" />
-        <div class="project-content">
-          <h4>Portfolio Website</h4>
-          <p>A fully responsive portfolio built with HTML, CSS & vanilla JS.</p>
-          <div class="project-links">
-            <a href="https://github.com/shubham/portfolio" target="_blank">GitHub</a>
-            <a href="https://shubham.dev" target="_blank">Live Demo</a>
-          </div>
-        </div>
-      </div>
-      <div class="project">
-        <img src="images/project2.jpg" alt="Project 2 Screenshot" />
-        <div class="project-content">
-          <h4>To‑Do App (Python)</h4>
-          <p>CLI-based to-do list with file persistence.</p>
-          <div class="project-links">
-            <a href="https://github.com/shubham/todo-app" target="_blank">GitHub</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+			
 
-  <section id="education">
-    <h2>Education</h2>
-    <div class="education-item">
-      <h4>B.Sc. Computer Science (CGPA: 7.7)</h4>
-      <p>Pillai College of Arts, Commerce & Science, Panvel (2021–22)</p>
-    </div>
-    <div class="education-item">
-      <h4>HSC (81%)</h4>
-      <p>Changu Kana Thakur College, Panvel (2020–21)</p>
-    </div>
-    <div class="education-item">
-      <h4>SSC (73.8%)</h4>
-      <p>Aspee Vidyalaya, Uchat (2018–19)</p>
-    </div>
-  </section>
+			
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form action="https://formspree.io/f/{your-id}" method="POST" class="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="_replyto" placeholder="Your Email" required />
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <p style="margin-top:16px;">Or email me at <strong>shubhampawale.in@gmail.com</strong></p>
-    <p>Call: <strong>+91‑77690‑91672</strong></p>
-  </section>
+			<section class="colorlib-contact" data-section="contact">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Get in Touch</span>
+							<h2 class="colorlib-heading">Contact</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-5">
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="icon-globe-outline"></i>
+								</div>
+								<div class="colorlib-text">
+									<p><strong>shubhampawale.in@gmail.com</strong></p>
+								</div>
+							</div>
 
-  <footer>
-    <p>&copy; 2025 Shubham Pawale. All rights reserved.</p>
-    <div class="social">
-      <a href="https://facebook.com/shubham.pawale.98892" target="_blank">📘</a>
-      <a href="https://instagram.com/shubham__pawale" target="_blank">📸</a>
-      <a href="https://linkedin.com/in/shubham-pawale-56245a249" target="_blank">💼</a>
-    </div>
-  </footer>
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="icon-phone"></i>
+								</div>
+								<div class="colorlib-text">
+									<p><strong>+91-7769-0916-72</strong></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-7 col-md-push-1">
+						
+						</div>
+					</div>
+				</div>
+			</section>
 
-</body>
+		</div><!-- end:colorlib-main -->
+	</div><!-- end:container-wrap -->
+	</div><!-- end:colorlib-page -->
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+	
+	
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+	</body>
 </html>
+
