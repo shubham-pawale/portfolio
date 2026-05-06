@@ -27,7 +27,7 @@
 
 	var fullHeight = function() {
 
-		if ( !isMobile.any() ) {
+		if ( true ) {
 			$('.js-fullheight').css('height', $(window).height());
 			$(window).resize(function(){
 				$('.js-fullheight').css('height', $(window).height());
@@ -85,7 +85,7 @@
 							}
 
 							el.removeClass('item-animate');
-						},  k * 200, 'easeInOutExpo' );
+						},  k * 50, 'easeInOutExpo' );
 					});
 					
 				}, 100);

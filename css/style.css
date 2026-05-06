@@ -32,7 +32,7 @@ a {
     text-decoration: none !important; }
 
 p {
-  margin-bottom:}
+  margin-bottom: 1.5em; }
 
 h1, h2, h3, h4, h5, h6 {
   color: #000;
@@ -78,9 +78,17 @@ figure {
   float: left;
   width: 300px;
   position: fixed;
-  overflow-y: scroll;
+  overflow-y: auto;
   z-index: 1001;
   background: #56b9bf;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
@@ -113,7 +121,8 @@ figure {
     font-size: 22px;
     margin-bottom: .5em;
     display: block;
-    width: 100%; }
+    width: 100%;
+    padding-bottom: 2em; }
     #colorlib-aside #colorlib-logo a {
       display: block;
       text-align: center;
@@ -193,11 +202,13 @@ figure {
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
     padding: 0 20px;
-    width: 100%; }
+    width: 100%; margin-top: auto; padding-bottom: 20px; }
     @media screen and (max-width: 768px) {
       #colorlib-aside .colorlib-footer {
         position: relative;
-        bottom: 0; } }
+        bottom: 0;
+        margin-top: auto;
+        padding-top: 2em; } }
     #colorlib-aside .colorlib-footer span {
       display: block; }
     #colorlib-aside .colorlib-footer ul {
@@ -397,7 +408,7 @@ body.offcanvas {
     .colorlib-services,
     .colorlib-contact {
       padding-top: 5em;
-      padding-bottom: 8em; } }
+      padding-bottom: 2em; } }
 
 .author-img {
   background-size: cover;
