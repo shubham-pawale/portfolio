@@ -80,7 +80,7 @@ figure {
   position: fixed;
   overflow-y: auto;
   z-index: 1001;
-  background: #56b9bf;
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -234,7 +234,7 @@ figure {
 #colorlib-main {
   width: calc(100% - 300px);
   float: right;
-  background-color:    #cfc9bd;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4ebf5 100%);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
