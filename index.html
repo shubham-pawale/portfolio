@@ -5,32 +5,51 @@
 	<meta name="google-site-verification" content="QiqiTouSp2JQPbrWYwUq7xHpuFL2KR-oh-gezyxxX10" />
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Shubham Pawale | Software Developer Portfolio</title>
+	<title>Shubham Pawale | Software Developer | React Native & Web Developer</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description"
-		content="Portfolio of Shubham Pawale showcasing React Native, IoT, Web Development, DevOps and software development projects.">
+		content="Shubham Pawale is a Software Developer specializing in React Native, Web Development, IoT and DevOps. View projects, skills, education and contact information.">
 	<meta name="keywords"
 		content="Shubham Pawale, React Native Developer, IoT Developer, Web Developer, DevOps, Portfolio, Software Developer, Full Stack Developer">
 	<meta name="author" content="Shubham Pawale">
 	<meta name="robots" content="index, follow">
 
 	<!-- Open Graph tags for social sharing preview -->
-	<meta property="og:title" content="Shubham Pawale | Software Developer Portfolio" />
+	<meta property="og:title" content="Shubham Pawale | Software Developer | React Native & Web Developer" />
 	<meta property="og:description"
-		content="Portfolio of Shubham Pawale showcasing React Native, IoT, Web Development, DevOps and software development projects." />
+		content="Shubham Pawale is a Software Developer specializing in React Native, Web Development, IoT and DevOps. View projects, skills, education and contact information." />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://shubham-pawale.github.io/portfolio/" />
-	<meta property="og:image" content="images/shubham-pawale-portfolio.jpg" />
+	<meta property="og:image" content="images/shubham-pawale-portfolio.png" />
 	<meta property="og:site_name" content="Shubham Pawale Portfolio" />
 
 	<!-- Twitter tags -->
-	<meta name="twitter:title" content="Shubham Pawale | Software Developer Portfolio" />
+	<meta name="twitter:title" content="Shubham Pawale | Software Developer | React Native & Web Developer" />
 	<meta name="twitter:description"
-		content="Portfolio of Shubham Pawale showcasing React Native, IoT, Web Development, DevOps and software development projects." />
+		content="Shubham Pawale is a Software Developer specializing in React Native, Web Development, IoT and DevOps. View projects, skills, education and contact information." />
 	<meta name="twitter:card" content="summary_large_image" />
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+	<!-- Person Schema (JSON-LD) -->
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org/",
+	  "@type": "Person",
+	  "name": "Shubham Pawale",
+	  "jobTitle": "Software Developer",
+	  "url": "https://shubham-pawale.github.io/portfolio/",
+	  "image": "https://shubham-pawale.github.io/portfolio/images/shubham-pawale-portfolio.png",
+	  "sameAs": [
+	    "https://github.com/ShubhamPawale108",
+	    "https://www.linkedin.com/in/shubham-pawale-56245a249"
+	  ]
+	}
+	</script>
+
+	<!-- Favicons -->
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192x192.png">
+	<link rel="apple-touch-icon" href="images/favicon-192x192.png">
 
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
@@ -63,13 +82,14 @@
 		body.dark-mode,
 		body.dark-mode #colorlib-page,
 		body.dark-mode #colorlib-main,
-		body.dark-mode .colorlib-narrow-content {
+		body.dark-mode .colorlib-narrow-content,
+		body.dark-mode section {
 			background: #121212 !important;
 			color: #e0e0e0 !important;
 		}
 
 		body.dark-mode #colorlib-aside {
-			background-color: #1e1e1e !important;
+			background: linear-gradient(135deg, #1a1a2e 0%, #0f0f1a 100%) !important;
 			border-right: 1px solid #333 !important;
 		}
 
@@ -107,7 +127,7 @@
 		}
 
 		body.dark-mode #colorlib-main-menu ul li a {
-			color: #aaa !important;
+			color: #ccc !important;
 		}
 
 		body.dark-mode #colorlib-main-menu ul li.active a {
@@ -126,6 +146,87 @@
 
 		body.dark-mode iframe {
 			filter: invert(90%) hue-rotate(180deg);
+		}
+
+		/* Always show sidebar nav in white/light since bg is always dark */
+		#colorlib-aside #colorlib-main-menu ul li a {
+			color: rgba(255, 255, 255, 0.85) !important;
+		}
+
+		/* Fixed dark mode toggle button at bottom right — Desktop only */
+		#darkModeToggle {
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			z-index: 9999;
+			background: rgba(44, 152, 240, 0.15);
+			backdrop-filter: blur(10px);
+			-webkit-backdrop-filter: blur(10px);
+			border: 1.5px solid #2c98f0;
+			color: #2c98f0;
+			padding: 10px 20px;
+			border-radius: 30px;
+			font-size: 14px;
+			font-weight: 600;
+			cursor: pointer;
+			transition: all 0.3s ease;
+			box-shadow: 0 4px 15px rgba(44, 152, 240, 0.3);
+		}
+
+		#darkModeToggle:hover {
+			background: #2c98f0;
+			color: #fff;
+			box-shadow: 0 6px 20px rgba(44, 152, 240, 0.5);
+			transform: translateY(-2px);
+		}
+
+		/* Mobile dark mode button inside sidebar */
+		#darkModeToggleMobile {
+			display: none;
+			margin: 12px auto 0 auto;
+			background: rgba(44, 152, 240, 0.15);
+			border: 1.5px solid #2c98f0;
+			color: #2c98f0;
+			padding: 8px 20px;
+			border-radius: 30px;
+			font-size: 14px;
+			font-weight: 600;
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+
+		#darkModeToggleMobile:hover {
+			background: #2c98f0;
+			color: #fff;
+		}
+
+		/* Fix overlapping elements in sidebar */
+		#colorlib-main-menu,
+		.text-center,
+		.colorlib-footer {
+			flex-shrink: 0;
+		}
+
+		#colorlib-aside .colorlib-footer ul {
+			display: flex !important;
+			justify-content: center;
+			gap: 15px;
+			flex-wrap: wrap;
+		}
+
+		#colorlib-aside .colorlib-footer ul li {
+			display: block !important;
+			margin: 0 !important;
+		}
+
+		@media screen and (max-width: 768px) {
+			#darkModeToggle {
+				display: none !important;
+			}
+
+			#darkModeToggleMobile {
+				display: block !important;
+			}
 		}
 
 		/* Typing cursor style */
@@ -158,9 +259,10 @@
 				aria-expanded="false" aria-controls="navbar"><i></i></a>
 			<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
 				<div class="text-center">
-					<div class="author-img" style="background-image: url(images/shubham-pawale-portfolio.jpg);"></div>
+					<div class="author-img"><img src="images/shubham-pawale-portfolio.png" alt="Shubham Pawale - Software Developer" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;" fetchpriority="high" decoding="async"></div>
 					<h1 id="colorlib-logo"><a href="index.html">Shubham Pawale</a></h1>
-					<span class="position"><a href="#">Software Developer</a><span style="color: rgba(255, 255, 255, 0.7);"> in
+					<span class="position"><a href="#">Software Developer</a><span
+							style="color: rgba(255, 255, 255, 0.7);"> in
 							Mumbai</span></span>
 				</div>
 				<nav id="colorlib-main-menu" role="navigation" class="navbar">
@@ -177,9 +279,12 @@
 					</div>
 				</nav>
 
+				<!-- Mobile Dark Mode Button (above social icons) -->
 				<div class="text-center">
-					<button id="darkModeToggle" class="dark-mode-btn">🌙 Dark Mode</button>
+					<button id="darkModeToggleMobile">🌙 Dark Mode</button>
 				</div>
+
+
 
 				<div class="colorlib-footer" style="margin-top: 20px;">
 					<ul>
@@ -469,6 +574,9 @@
 		</div><!-- end:container-wrap -->
 	</div><!-- end:colorlib-page -->
 
+	<!-- Floating Dark Mode Toggle Button -->
+	<button id="darkModeToggle">🌙 Dark Mode</button>
+
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -501,25 +609,39 @@
 
 		// Dark Mode Toggle Logic
 		const darkModeToggle = document.getElementById('darkModeToggle');
+		const darkModeToggleMobile = document.getElementById('darkModeToggleMobile');
 		const body = document.body;
 
-		// Check local storage for dark mode preference
-		if (localStorage.getItem('darkMode') === 'enabled') {
-			body.classList.add('dark-mode');
-			darkModeToggle.innerHTML = '☀️ Light Mode';
+		function setDarkMode(enabled) {
+			if (enabled) {
+				body.classList.add('dark-mode');
+				if (darkModeToggle) darkModeToggle.innerHTML = '☀️ Light Mode';
+				if (darkModeToggleMobile) darkModeToggleMobile.innerHTML = '☀️ Light Mode';
+				localStorage.setItem('darkMode', 'enabled');
+			} else {
+				body.classList.remove('dark-mode');
+				if (darkModeToggle) darkModeToggle.innerHTML = '🌙 Dark Mode';
+				if (darkModeToggleMobile) darkModeToggleMobile.innerHTML = '🌙 Dark Mode';
+				localStorage.setItem('darkMode', 'disabled');
+			}
 		}
 
-		darkModeToggle.addEventListener('click', () => {
-			body.classList.toggle('dark-mode');
+		// Restore preference on load
+		if (localStorage.getItem('darkMode') === 'enabled') {
+			setDarkMode(true);
+		}
 
-			if (body.classList.contains('dark-mode')) {
-				localStorage.setItem('darkMode', 'enabled');
-				darkModeToggle.innerHTML = '☀️ Light Mode';
-			} else {
-				localStorage.setItem('darkMode', 'disabled');
-				darkModeToggle.innerHTML = '🌙 Dark Mode';
-			}
-		});
+		if (darkModeToggle) {
+			darkModeToggle.addEventListener('click', () => {
+				setDarkMode(!body.classList.contains('dark-mode'));
+			});
+		}
+
+		if (darkModeToggleMobile) {
+			darkModeToggleMobile.addEventListener('click', () => {
+				setDarkMode(!body.classList.contains('dark-mode'));
+			});
+		}
 	</script>
 
 </body>
