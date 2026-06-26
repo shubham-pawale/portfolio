@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 
 <head>
 	<meta name="google-site-verification" content="QiqiTouSp2JQPbrWYwUq7xHpuFL2KR-oh-gezyxxX10" />
@@ -13,6 +13,7 @@
 		content="Shubham Pawale, React Native Developer, IoT Developer, Web Developer, DevOps, Portfolio, Software Developer, Full Stack Developer">
 	<meta name="author" content="Shubham Pawale">
 	<meta name="robots" content="index, follow">
+	<link rel="canonical" href="https://shubham-pawale.github.io/portfolio/">
 
 	<!-- Open Graph tags for social sharing preview -->
 	<meta property="og:title" content="Shubham Pawale | Software Developer | React Native & Web Developer" />
@@ -21,13 +22,15 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://shubham-pawale.github.io/portfolio/" />
 	<meta property="og:image" content="https://shubham-pawale.github.io/portfolio/images/shubham-pawale-portfolio.png" />
-	<meta property="og:site_name" content="Shubham Pawale Portfolio" />
+	<meta property="og:site_name" content="Shubham Pawale" />
 
 	<!-- Twitter tags -->
 	<meta name="twitter:title" content="Shubham Pawale | Software Developer | React Native & Web Developer" />
 	<meta name="twitter:description"
 		content="Shubham Pawale is a Software Developer specializing in React Native, Web Development, IoT and DevOps. View projects, skills, education and contact information." />
 	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@ShubhamPawale" />
+	<meta name="twitter:creator" content="@ShubhamPawale" />
 
 	<!-- Person Schema (JSON-LD) -->
 	<script type="application/ld+json">
@@ -45,13 +48,23 @@
 	}
 	</script>
 
-	<!-- WebSite Schema (JSON-LD) -->
+	<!-- WebSite Schema (JSON-LD) — signals preferred site name to Google -->
 	<script type="application/ld+json">
 	{
-	  "@context":"https://schema.org",
-	  "@type":"WebSite",
-	  "name":"Shubham Pawale Portfolio",
-	  "url":"https://shubham-pawale.github.io/portfolio/"
+	  "@context": "https://schema.org",
+	  "@type": "WebSite",
+	  "name": "Shubham Pawale",
+	  "alternateName": ["Shubham Pawale Portfolio", "Shubham Pawale | Software Developer"],
+	  "description": "Portfolio of Shubham Pawale, a Software Developer specializing in React Native, Web Development, IoT and DevOps.",
+	  "url": "https://shubham-pawale.github.io/portfolio/",
+	  "potentialAction": {
+	    "@type": "SearchAction",
+	    "target": {
+	      "@type": "EntryPoint",
+	      "urlTemplate": "https://shubham-pawale.github.io/portfolio/?q={search_term_string}"
+	    },
+	    "query-input": "required name=search_term_string"
+	  }
 	}
 	</script>
 
